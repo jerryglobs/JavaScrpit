@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+<p id= "dem"></p>
+<script>
+var x = 10;
+var y = "10";
+document.getElementById("demo").innerHTML = Boolean(x == y);
+document.getElementById("dem").innerHTML = "PJH";
+
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello \
+World! PJH";
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays PJH</h2>
+
+<p id="demo"></p>
+
+<script>
+var person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46; 
+document.getElementById("demo").innerHTML =
+person[0] + " " + person.length;
+</script>
+
+</body>
+</html>
+
+
+
+*
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript PJH</h2>
+
+<p>To test if an object does not exist, test if the type is undefined:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = typeof myObj === "undefined";
+</script>
+
+</body>
+</html>

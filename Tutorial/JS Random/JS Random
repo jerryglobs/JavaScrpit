@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.random() PJH</h2>
+
+<p>Math.random() returns a random number between 0 (included) and 1 (excluded):</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.random();
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math PJH</h2>
+
+<p>Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both 
+included):</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 10); //floor 는 일의자리 이하는 다 내림이므로 소수점에서 10을 곱해 0~9를 추출
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math PJH</h2>
+
+<p>Math.floor(Math.random() * 100)) returns a random integer between 0 and 99 
+(both included):</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 100);
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math PJH</h2>
+
+<p>Math.floor() used with Math.random() * 101 returns a random integer between 0 and 100 
+(both included):</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 101);
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math PJH</h2>
+
+<p>Math.floor(Math.random() * 100) + 1) returns a random integer between 1 and 
+100 (both included):</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 100) + 1;
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.random() PJH</h2>
+
+<p>Every time you click the button, getRndInteger(min, max) returns a random number between 0 
+and 9 (both included):</p>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+</body>
+</html>
+
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.random() PJH</h2>
+
+<p>Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 10 (both included):</p>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+
+</body>
+</html>
+
+
+*
+
+

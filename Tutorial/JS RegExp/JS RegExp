@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods PJH</h2>
+
+<p>Search a string for "W3Schools", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Visit W3Schools!"; 
+var n = str.search("W3Schools");
+document.getElementById("demo").innerHTML = n;
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions PJH</h2>
+
+<p>Search a string for "w3Schools", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Visit W3Schools!"; 
+var n = str.search(/w3Schools/i);
+document.getElementById("demo").innerHTML = n;
+</script>
+
+</body>
+</html>
+
+// i = 대문자 소문자 구분없이 라는 옵션임
+
+
+*
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String Methods PJH</h2>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Microsoft","W3Schools");
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a multiline search for "is" at the beginning of each line in a string. PJH</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "\nIs th\nis it?";
+  var patt1 = /^is/m;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+ 
+// 옵션 두개이상쓸때는 그냥 붙여쓰면됨 ex) mi
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions PJH</h2>
+
+<p>Search for an "e" in the next paragraph:</p>
+
+<p id="p01">The best things in life are free!</p>
+
+<p id="demo"></p>
+
+<script>
+text = document.getElementById("p01").innerHTML; 
+document.getElementById("demo").innerHTML = /e/.test(text);
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions PJH</h2>
+
+<p id="demo"></p>
+
+<script>
+var obj = /e/.exec("The best things in life are free!");
+document.getElementById("demo").innerHTML =
+"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+</script>
+
+</body>
+</html>
+
+
+*
+
+

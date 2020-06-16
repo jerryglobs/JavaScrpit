@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript setFullYear() PJH</h2>
+
+<p>The setFullYear() method sets the year of a date object:</p>
+
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+d.setFullYear(2020);
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript setFullYear() PJH</h2>
+
+<p>The setFullYear() method can optionally set month and day.</p>
+<p>Please note that month counts from 0. December is month 11:</p>
+
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+d.setFullYear(2020, 11, 3);
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+
+
+*
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2100, 0, 14);
+// 0 대신 1 을 넣어도 1월로 표기됨
+if (someday > today) {
+  text = "Today is before January 14, 2100. PJH";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+
+*
+
+
